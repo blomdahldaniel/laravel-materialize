@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('cards', function () {
+    return view('cards');
+});
 Route::get('welcome', function () {
     return view('welcome');
 });

@@ -1,3 +1,6 @@
+body{
+    @extend .grey.lighten-4;
+}
 #index-banner{
-    @extend .cyan, .lighten-3;
+    @extend .red-text.text-lighten-2;
 }

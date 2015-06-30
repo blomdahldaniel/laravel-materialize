@@ -11,4 +11,12 @@ function(a){a(document).ready(function(){a.fn.pushpin=function(b){var c={top:0,b
 
 //Put your main js here
 
+(function($){
+  $(function(){
+
+    $('.button-collapse').sideNav();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+
 //# sourceMappingURL=all.js.map

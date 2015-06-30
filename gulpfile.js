@@ -12,6 +12,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix
+        .copy('vendor/fortawesome/font-awesome/fonts', 'public/fonts')
         .sass('all.scss')
         .sass([
             'all.scss'

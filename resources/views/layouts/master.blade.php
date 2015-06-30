@@ -10,10 +10,6 @@
         <meta name="author" content="@yield('author', 'Daniel Blomdahl')">
         @yield('meta')
 
-        @yield('before-styles')
-            {!! HTML::style(elixir('css/all.css')) !!}
-        @yield('after-styles')
-
         <!-- Icons-->
         <!-- Place favicon.ico in the root public/img/favicons/ -->
         <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
@@ -36,6 +32,13 @@
         <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,100,100italic,300' rel='stylesheet' type='text/css'>
+        @yield('before-styles')
+        {!! HTML::style(elixir('css/all.css')) !!}
+        @yield('after-styles')
+
+
         {!! HTML::script("js/vendor/modernizr-2.8.3.min.js") !!}
     </head>
     <body>
@@ -47,11 +50,13 @@
 
         @yield('content')
 
+        @include('includes.footer')
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{asset('js/vendor/jquery-1.11.2.min.js')}}"><\/script>')</script>
 
         @yield('before-scripts')
-
+            {!! HTML::script(elixir('js/all.js')) !!}
         @yield('after-scripts')
 
         @include('includes.partials.GoogleAnalytics')
