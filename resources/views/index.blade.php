@@ -27,7 +27,7 @@
         <div class="col s12 m6 offset-m3">
           <ul class="collapsible" data-collapsible="accordion">
               <li>
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>1. Includes Materialize SASS</div>
+                <div class="collapsible-header"><i class="material-icons">assignment</i>1. Includes Materialize SASS</div>
                 <div class="collapsible-body"><p>Grunt fixes the rest. I have variables-override where i put all my overriding settings</p></div>
               </li>
               <li>
