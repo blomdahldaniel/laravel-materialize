@@ -2,8 +2,8 @@
 
 ## Laravel - Materialize
 
-My mission is to make a platform with Laravel and use Materialize as the front-end framework.
-This is supposed to be a repo that can kickstart that project.
+My mission is to make a plattform with Laravel and use Materialize as the front-end framework.
+This is supposed to be a repo that can kickstart a project where you want to combine the 2.
 
 ### Laravel Documentation
 
